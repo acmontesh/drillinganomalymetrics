@@ -1,11 +1,21 @@
 import unittest
 from drillinganomalymetrics.metrics import calculate_accuracy_metrics
 
+import os
+
+TEST_DIR = os.path.dirname(__file__)
+
+files = [
+    os.path.join(TEST_DIR, "test_risk_1.csv"),
+    os.path.join(TEST_DIR, "test_risk_2.csv"),
+    os.path.join(TEST_DIR, "test_risk_3.csv"),
+]
+
 class Testing_Metrics(unittest.TestCase):
 
     def setUp(self):
         self.results = calculate_accuracy_metrics(
-            ["test_risk_1.csv", "test_risk_2.csv", "test_risk_3.csv"],
+            files,
             labelsPositive=[
                 ("2024-04-24 21:36","2024-04-28 21:36"),
                 ("2023-05-01 02:59","2023-05-01 04:20"),
