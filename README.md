@@ -18,7 +18,7 @@ drillinganomalymetrics is a Python package containing functions to compute accur
 <br>
 
 <strong>Why New Metrics</strong><br>
-In summary, traditional classification metrics fail to reflect how close a model is to the aforementioned ideal characteristics. More importantly, they often generate misleading values: bad models can get high scores and good models very low values. Moreoever, traditional metrics can become inflated when used in a point-wise manner in stuck pipe incidents that develop over long periods of time. An example is provided in Montes et al. (2025)—SPE-220725-PA. 
+In summary, traditional classification metrics fail to reflect how close a model is to the aforementioned ideal characteristics. More importantly, they often generate misleading values: bad models can get high scores and good models very low values. Moreoever, traditional metrics can become artificially inflated when used in a point-wise manner in drilling anomalies that develop over long periods of time. Examples are provided in Montes et al. (2025)—SPE-220725-PA. 
 
 
 --------------------
