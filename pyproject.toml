@@ -1,6 +1,6 @@
 [project]
 name = "drillinganomalymetrics"
-version = "0.1.0"
+version = "0.1.1"
 description = "Package providing functions to compute a modified recall, precision and F1-score metrics for drilling anomaly detection models evaluated on historical data sets."
 readme = "README.md"
 authors = [
