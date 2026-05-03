@@ -1,5 +1,5 @@
 import unittest
-from ..src.drillinganomalymetrics.metrics import calculate_accuracy_metrics
+from drillinganomalymetrics.metrics import calculate_accuracy_metrics
 
 class Testing_Metrics(unittest.TestCase):
 
