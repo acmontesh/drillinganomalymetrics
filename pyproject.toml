@@ -1,0 +1,17 @@
+[project]
+name = "drillinganomalymetrics"
+version = "0.1.0"
+description = "Package providing functions to compute a modified recall, precision and F1-score metrics for drilling anomaly detection models evaluated on historical data sets."
+readme = "README.md"
+authors = [
+    { name = "Abraham Montes", email = "acmontesh@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+drillinganomalymetrics = "drillinganomalymetrics:main"
+
+[build-system]
+requires = ["uv_build>=0.11.8,<0.12.0"]
+build-backend = "uv_build"
