@@ -1,7 +1,7 @@
 # drillinganomalymetrics
 
 [![Unit Tests](https://github.com/acmontesh/drillinganomalymetrics/actions/workflows/unit_tests.yaml/badge.svg)](https://github.com/acmontesh/drillinganomalymetrics/actions/workflows/unit_tests.yaml)  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://www.gnu.org/licenses/mit)
-![Version](https://img.shields.io/badge/version-0.0.1-green)
+![Version](https://img.shields.io/badge/version-0.1.0-green)
 
 
 ------------------------
