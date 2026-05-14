@@ -12,7 +12,7 @@ def lambda_function(t, actualLabs,delta=360):
     else:
         return 1/(1+(actualLabs[0]-t)**2.0)
 
-def calculate_accuracy_metrics( inputFilePaths,labelsPositive,formatDatesInputs,formatDateLabels,alpha=0.7, dateCol="Date",riskCol="SPR_Index",thersholdPredPos=0.67,delta=360 ):
+def calculate_accuracy_metrics( inputFilePaths,labelsPositive,formatDatesInputs,formatDateLabels,alpha=0.7, dateCol="Date",riskCol="SPR_Index",thersholdPredPos=0.67,delta=360,epsilon=1e-12 ):
     nT                      = 0
     sumRecall               = 0
     sumPrecisionDenominator = 0
@@ -85,7 +85,7 @@ def calculate_accuracy_metrics( inputFilePaths,labelsPositive,formatDatesInputs,
             sumPrecisionNumerator   = sumPrecisionNumerator + UAllInWindow
     
     recall      = (1/nT)*sumRecall
-    precision   = sumPrecisionNumerator/sumPrecisionDenominator
-    f1          = 2 / ((1/recall) + (1/precision))
+    precision   = sumPrecisionNumerator/(sumPrecisionDenominator+epsilon)
+    f1          = 2 / ((1/(recall+epsilon)) + (1/(precision+epsilon)))
     return recall,precision,f1,allpredlabs,allactlabs
 
